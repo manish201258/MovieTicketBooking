@@ -1,0 +1,17 @@
+import React from 'react'
+import Navbar from './Navbar'
+import { Outlet } from 'react-router-dom'
+import Footer from './Footer'
+
+function MainLayout() {
+  const notify = () => toast("Wow so easy!")
+  return (
+    <>
+        <Navbar/>
+        <Outlet/>
+        <Footer/>
+    </>
+  )
+}
+
+export default MainLayout

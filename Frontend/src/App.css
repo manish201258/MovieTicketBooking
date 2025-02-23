@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* Navbar */
+.hh1{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.navbar-1{
+    /* background-color: rgb(135, 91, 91); */
+    margin-top: 1rem;
+    position: relative;
+}
+
+.nav-logo img{
+    width: 10rem;
+}
+.nav-list{
+display: flex;
+gap: 4rem;
+justify-content: center;
+align-items: center;
+color: black;
+}
+.nav-list li{
+    list-style: none;
+}
+
+.nav-profile{
+  position: absolute;
+  right: 0;
+}
+
+.nav-profile img{
+  width: 2rem;
+}
+
+
+/* popup Form */
+.popup {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.show{
+top: 50%;
+transition: all;
+transition-duration: 400ms;
+}
+.hide{
+top: -50%;
+transition: all;
+transition-duration: 400ms;
+}
+/* footer */
+footer{
+  margin-top: 1vh;
+  background-color: rgb(63, 59, 59);
+  padding: 44px;
+  display: flex;
+  flex-direction: column;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer-logo{
+  width:10rem;
+  filter: invert();
+  
+}
+.follow-us{
+  width: 30px;
+  filter: invert();
+}
+.li1,.li2,.li3,.li4{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vw;
+}
+li{
+  list-style: none;
+  cursor: pointer;
+}
+.follow-us{
+  display: flex;
+  gap: 8px;
+  filter: invert();
+
+}
+footer a{
+  color: aliceblue;
+  text-decoration: none;
+}
+.footer-hr{
+width: 100%;
+display: none;
+}
+/* Movie Card */
+.moviecard1{
+height: 360px;
+width: 200px;
+border-radius: 6px;
+/* border: 1px solid; */
+margin: 24px;
+}
+.moviecard1{
+  overflow: hidden;
+}
+.moviecard1-img{
+    /* background-image: url("public/images/erik-mclean-Np_8Kt_QHZU-unsplash.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80%;
+    border-radius: 7px;
+    margin-bottom: 8px;
+}
+.moviecard1-img:hover{
+    transform: scale(1.03);
+    transition: all 200ms;
+}
+.moviecard1-data{
+    padding: 4px;
+}
+.moviecard1-data h4{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.moviecard1-data p{
+  font-size: 12px;
+}
+.booking-main p{
+  color: rgb(79, 77, 77);
+}
+.moviecard1-data p{
+    color: rgb(79, 77, 77);
+}
+
+/* Home.jsx */
+
+.filter-section{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.filter-section input{
+outline: none;
+border: 1px solid ;
+border-radius: 0.2rem;
+height: 2rem;
+padding-left: 0.5rem;
+}
+.filter-btn{
+  padding-left: 18px;
+  padding-right: 18px;
+  border: 0.1rem solid black;
+  border-radius: 6px;
+  background-color: transparent;
+  margin: 24px 24px 0px 24px;
+}
+.movie-collection{
+  width: 100%;
+  display: flex;
+  padding-top:18px ;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.movie-collection::-webkit-scrollbar{
+  display: none;
+}
+/* Movie info page */
+
+.card-body{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+.movie-info-card .card{
+    min-width: fit-content;
+    color: rgb(255, 255, 255);
+  background-color: rgb(199, 190, 190);
+    /* background-size: cover; */
+}
+
+.bg-image{
+  width: fit-content;
+    position: absolute;
+    top: -10px;
+  filter: blur(5px);
+  right: 0;
+  margin: 10px;
+}
+.bg-image img{
+  width: 25rem;
+}
+
+/* About */
+
+/* Login Register */
+.cross-popup{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+position: absolute;
+top: 8px;
+right: 10px;
+border: 1px solid;
+border-radius: 50%;
+}
+.cross-popup img{
+  width: 1.4rem;
+}
+
+  .regis button{
+    margin-top: 12px;
+  }
+  .regis p{
+    font-size: 18px;
+  }
+  .signup,.login{
+    width: 310px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 2rem ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+  padding: 24px;
+  position: relative;
+  }
+  .login{
+    background-color: whitesmoke;
+  }
+  .signup{
+    background-color: whitesmoke;
+  }
+  .heading{
+        width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    padding: 6px;
+    justify-content: center;
+    margin-top:8px ;
+    border-top-left-radius:20px ;
+  }
+  .heading h3{
+    color:rgb(0, 0, 0);
+  }
+  .inputsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    margin-top: 42px;
+    width: 100%;
+  }
+  .inputsection input{
+    height: 6vh;
+    width: 90%;
+    border: 1px solid  black ;
+    border-radius: 0.2rem;
+    padding-left: 0.8vw;
+  }
+  /* Movie info */
+  .movie-info-card{
+    background-color: white;
+  }
+
+
+  /* Movie Booking page */
+.booking-select-day{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.booking-movie-info{
+  box-shadow: 0 0 0.1rem;
+  border-radius:0.5rem;
+}
+.booking-month{
+  border:1px solid;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(236, 236, 236);
+ 
+}
+.booking-month p{
+  transform: rotate(-90deg);
+  margin: 0;
+}
+.btn-day{
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+.booking-theater{
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.1rem;
+  gap: 25%;
+}
+.b-t-time{
+  border: 1px solid;
+  border-radius:0.5rem;
+  padding: 0.4rem;
+  border-width: thin;
+}
+.b-t-info{
+  width: 35%;
+}
+.noncancel{
+  width: fit-content;
+  border-radius: 0.3rem;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: rgb(224, 224, 224);
+}
+
+/* Sheet Booking */
+.screen {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.booksheet-select .sheet-btn{
+  border:0.1rem solid black;
+  border-radius: 0.2rem;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(128, 186, 127);
+}
+.sheet-buttons .select-btn:hover{
+  background-color: rgb(182, 73, 73);
+}
+
+.checkout{
+  border: 1px solid;
+  border-radius: 0.4rem;
+  width: 80%;
+  margin: auto;
+  padding: 0.7rem;
+}
+/* Checkout Page */
+.ticket-main{
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.ticket-data{
+  margin: 12px;
+  width: 60%;
+  box-shadow: 0 0 2px ;
+}
+.ticket-movie-details{
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  flex-wrap: wrap;
+
+}
+.t-m-d-desc{
+  margin-top: 1rem;
+  width: 60%;
+}
+.ticket-movie-details img{
+  width: 8rem;
+  border-radius: 0.4rem;
+}
+.ticket-buy{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* History */
+  .booked-Tickets{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border-radius: 0.4rem 0.4rem 0.4rem 0.4rem; 
+    position: relative; 
+    margin: 1rem;
+  }
+  .booked-movie-img{
+width: 8rem;
+height: 100%;
+  }
+  .booked-movie-data{
+background-color: rgb(218, 224, 214);
+width: 24rem;
+height: 100%;
+border-radius: 1rem 0.4rem 0.4rem 1rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 1.5rem;
+gap: 0.7rem;
+
+  }
+  .booked-movie-data p{
+    margin: 0;
+  }
+  .booked-movie-img{
+    position: relative;
+    border-radius: 0.4rem 1rem 1rem 0.4rem;
+  }
+  .overlaped-div{
+    border-radius: 0.4rem 1rem 1rem 0.4rem;
+  }
+  .booked-date{
+    color: rgb(255, 255, 255);
+  }
+.booked-date p{
+  transform: rotate(-90deg);
+  font-weight: bold;
+  font-size: 18px;
+}
+.b-m-time{
+  font-size: 0.9rem;
+}
+.b-m-title{
+  font-size: 1.3rem;
+}
+.status{
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+/* Admin pamme */
+.admin-dashboard::-webkit-scrollbar{
+display: none;
+}
+.admin-side-menu{
+  width: 250px;
+}
+
+.admin-navbar-logo{
+  display: flex;
+  align-items: center;
+  gap: 4.6rem;
+}
+.admin-navbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* sheet booking */
+.booking-select-theater{
+  width: 40rem;
+}
+.sheet-buttons{
+  width: 20rem;
+  margin-right: 8rem;
+}
+
+
+/* responsive */
+@media(max-width: 600px){
+  .profile-top-name p{
+    display: none;
+  }
+  .nav-list{
+    gap: 2rem;
+  }
+  .footer-hr{
+    display: block;
+    }
+    .moviecard1-img{
+      height: 60%;
+    }
+    .moviecard1{
+      width: 35%;
+  
+    }
+    .booking-select-theater{
+      align-items: center;
+    }
+    .row-row{
+      display: none;
+    }
+    .sheet-buttons{
+      margin-right: 0rem;
+    }
+    .booked-movie-data{
+      width: 13rem;
+    }
+    .booked-Tickets{
+      margin: 0.8rem;
+    }
+    .admin-side-menu{
+      width: 100%;
+    }
+    .admin-main{
+      flex-wrap: wrap;
+    }
+    .admin-navbar-logo{
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .admin-profile p{
+      display: none;
+    }
+    .inputsection input{
+      padding-left: 4vw;
+    }
+    .Toastify__toast-container {
+      top: 0;
+      right: 0;
+      width: 50%;
+    }
+}

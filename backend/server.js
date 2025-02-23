@@ -9,7 +9,7 @@ require('dotenv').config();
 const allowedOrigins = [
   'https://cinemacove-backend.onrender.com',
   'http://localhost:5173',
-  'https://cinemacove.netlify.app'
+  'https://bookmovieticket.vercel.app'
 ];
 
 const corsOptions = {
